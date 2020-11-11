@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#221F1F"
+    tools:context=".MainActivity">
+
+
+   <com.google.android.material.appbar.AppBarLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/cardview_dark_background"
+       android:theme="@style/AppTheme.AppBarOverlay"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent">
+
+      <androidx.appcompat.widget.Toolbar
+          android:id="@+id/toolbar"
+          android:layout_width="match_parent"
+          android:layout_height="?attr/actionBarSize"
+          android:background="#E50914"
+          app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+   </com.google.android.material.appbar.AppBarLayout>
+
+   <Button
+       android:id="@+id/btnNow"
+       android:layout_width="153dp"
+       android:layout_height="53dp"
+       android:layout_marginStart="270dp"
+       android:layout_marginTop="314dp"
+       android:background="?attr/selectableItemBackground"
+       android:onClick="NowSlide"
+       android:text="Xem thêm    ➜"
+       android:textColor="#E50914"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+   <Button
+       android:id="@+id/button"
+       android:layout_width="153dp"
+       android:layout_height="53dp"
+       android:layout_marginStart="270dp"
+       android:layout_marginTop="144dp"
+       android:background="?attr/selectableItemBackground"
+       android:onClick="WillSlide"
+       android:text="Xem thêm    ➜"
+       android:textColor="#E50914"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/btnNow" />
+
+   <TextView
+       android:id="@+id/textView8"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="4dp"
+       android:layout_marginTop="158dp"
+       android:text="Top 5 phim đang chiếu"
+       android:textColor="#E50914"
+       android:textSize="30sp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+   <TextView
+       android:id="@+id/textView9"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="4dp"
+       android:layout_marginTop="362dp"
+       android:text="Top 5 phim sắp chiếu"
+       android:textColor="#E50914"
+       android:textSize="30sp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+   <ImageView
+       android:id="@+id/imageView3"
+       android:layout_width="201dp"
+       android:layout_height="109dp"
+       android:layout_marginStart="4dp"
+       android:layout_marginTop="204dp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:srcCompat="@drawable/phim6" />
+
+   <ImageView
+       android:id="@+id/imageView8"
+       android:layout_width="215dp"
+       android:layout_height="153dp"
+       android:layout_marginTop="183dp"
+       app:layout_constraintStart_toEndOf="@+id/imageView3"
+       app:layout_constraintTop_toTopOf="parent"
+       app:srcCompat="@drawable/phim10" />
+
+   <ImageView
+       android:id="@+id/imageView10"
+       android:layout_width="194dp"
+       android:layout_height="108dp"
+       android:layout_marginStart="4dp"
+       android:layout_marginTop="410dp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:srcCompat="@drawable/phim1" />
+
+   <ImageView
+       android:id="@+id/imageView11"
+       android:layout_width="210dp"
+       android:layout_height="107dp"
+       android:layout_marginTop="410dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="1.0"
+       app:layout_constraintStart_toEndOf="@+id/imageView10"
+       app:layout_constraintTop_toTopOf="parent"
+       app:srcCompat="@drawable/phim2" />
+
+   <ImageView
+       android:id="@+id/img"
+       android:layout_width="276dp"
+       android:layout_height="200dp"
+       android:layout_marginStart="65dp"
+       android:transitionName="logo_image"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:srcCompat="@drawable/logo_1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
